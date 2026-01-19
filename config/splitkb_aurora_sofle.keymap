@@ -37,7 +37,9 @@
                    &kp LCTRL  &kp LALT  &kp LGUI  &mo 1   &mt LSHFT SPACE    &mt RSHFT RET  &mo 2   &kp BSPC  &kp RGUI       &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         lower_layer {
