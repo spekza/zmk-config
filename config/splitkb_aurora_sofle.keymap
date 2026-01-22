@@ -50,6 +50,36 @@
             bindings = <&ugrave>;
             key-positions = <19 20>;
         };
+
+        parentheseLEFT {
+            bindings = <&kp LPAR>;
+            key-positions = <28 27>;
+        };
+
+        parentheseRIGHT {
+            bindings = <&kp RPAR>;
+            key-positions = <31 32>;
+        };
+
+        bracketLEFT {
+            bindings = <&kp LBKT>;
+            key-positions = <27 26>;
+        };
+
+        bracketRIGHT {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <32 33>;
+        };
+
+        bracesLEFT {
+            bindings = <&kp LBRC>;
+            key-positions = <26 25>;
+        };
+
+        bracesRIGHT {
+            bindings = <&kp RBRC>;
+            key-positions = <34 33>;
+        };
     };
 
     macros {
