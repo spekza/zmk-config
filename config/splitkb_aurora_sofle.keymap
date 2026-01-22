@@ -21,9 +21,28 @@
     combos {
         compatible = "zmk,combos";
 
-        egrave {
+        eaigu {
             bindings = <&kp RA(E)>;
             key-positions = <15 16>;
+        };
+
+        egrave {
+            bindings = <&kp RA(GRAVE)>;
+            key-positions = <15 14>;
+        };
+
+        ecirconflexe {
+            bindings = <&ecirconflexe>;
+            key-positions = <15 28>;
+        };
+    };
+
+    macros {
+        ecirconflexe: ecirconflexe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp E>;
+            label = "ECIRCONFLEXE";
         };
     };
 
