@@ -17,6 +17,13 @@
 };
  */
 
+&mt {
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    require-prior-idle-ms = <125>;
+    quick-tap-ms = <175>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -79,6 +86,11 @@
         bracesRIGHT {
             bindings = <&kp RBRC>;
             key-positions = <34 33>;
+        };
+
+        apos {
+            bindings = <&kp APOS>;
+            key-positions = <45 46>;
         };
     };
 
@@ -164,11 +176,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans     &trans  &trans   &trans     &trans    &trans                       &bt BT_SEL 0  &trans     &trans     &bt BT_NXT  &bt BT_PRV  &bt BT_CLR
-&kp GRAVE  &none   &kp DQT  &kp CARET  &kp APOS  &kp GRAVE                    &kp N6        &kp N7     &kp N8     &kp N9      &kp N0      &trans
-&kp F1     &kp F2  &kp F3   &kp F4     &kp F5    &kp F6                       &trans        &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT   &trans
-&kp F7     &kp F8  &kp F9   &kp N9     &kp F11   &kp F12    &trans    &trans  &kp KP_PLUS   &kp MINUS  &kp EQUAL  &kp LBKT    &kp RBKT    &kp BSLH
-                   &trans   &trans     &trans    &trans     &trans    &trans  &trans        &trans     &trans     &trans
+&trans     &trans  &trans   &trans     &trans    &trans                       &bt BT_SEL 0  &trans     &trans        &bt BT_NXT  &bt BT_PRV  &bt BT_CLR
+&kp GRAVE  &none   &kp DQT  &kp CARET  &kp APOS  &kp GRAVE                    &kp N6        &kp N7     &kp N8        &kp N9      &kp N0      &trans
+&kp F1     &kp F2  &kp F3   &kp F4     &kp F5    &kp F6                       &trans        &kp LEFT   &kp DOWN      &kp UP      &kp RIGHT   &trans
+&kp F7     &kp F8  &kp F9   &kp N9     &kp F11   &kp F12    &trans    &trans  &kp KP_PLUS   &kp MINUS  &kp QUESTION  &kp LBKT    &kp RBKT    &kp BSLH
+                   &trans   &trans     &trans    &trans     &trans    &trans  &trans        &trans     &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
