@@ -102,6 +102,11 @@
             bindings = <&kp RSHFT>;
             key-positions = <57 45>;
         };
+
+        capsWord {
+            bindings = <&caps_word>;
+            key-positions = <52 40 57 45>;
+        };
     };
 
     macros {
