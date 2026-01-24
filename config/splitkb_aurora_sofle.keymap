@@ -157,7 +157,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "TESTMOUSESCROLL";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc MOVE_Y(5)>, <&msc MOVE_Y(-5)>;
         };
     };
 
