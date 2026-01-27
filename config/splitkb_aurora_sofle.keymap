@@ -120,6 +120,11 @@
             bindings = <&kp DEL>;
             key-positions = <57 32>;
         };
+
+        double_apos {
+            bindings = <&kp LS(APOS)>;
+            key-positions = <45 46 47>;
+        };
     };
 
     macros {
