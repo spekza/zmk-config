@@ -122,7 +122,7 @@
         };
 
         double_apos {
-            bindings = <&kp LS(APOS)>;
+            bindings = <&doubleaposANDleftmove>;
             key-positions = <45 46 47>;
         };
     };
@@ -161,6 +161,13 @@
             #binding-cells = <0>;
             bindings = <&kp APOS &kp SPACE>;
             label = "APPOSTROPHE";
+        };
+
+        doubleaposANDleftmove: doubleaposANDleftmove {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(APOS) &kp LEFT>;
+            label = "DOUBLEAPOSANDLEFTMOVE";
         };
     };
 
