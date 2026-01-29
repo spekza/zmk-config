@@ -166,7 +166,7 @@
         doubleaposANDleftmove: doubleaposANDleftmove {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(APOS) &kp LEFT>;
+            bindings = <&kp LS(APOS) &kp LS(APOS) &kp LEFT>;
             label = "DOUBLEAPOSANDLEFTMOVE";
         };
     };
