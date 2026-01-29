@@ -58,7 +58,7 @@
 
         ccedille {
             bindings = <&kp RA(COMMA)>;
-            key-positions = <39 28>;
+            key-positions = <39 40>;
         };
 
         ugrave {
