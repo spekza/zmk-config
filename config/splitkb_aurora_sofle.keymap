@@ -222,11 +222,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                       &kp F7    &kp F8  &kp F9  &kp F10  &kp F11    &kp F12
-&kp F1     &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                       &kp AMPS  &kp N7  &kp N8  &kp N9   &kp F11    &kp F12
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp N0    &kp N4  &kp N5  &kp N6   &kp ASTRK  &kp TILDE
-&trans     &trans    &trans  &trans    &trans      &trans     &trans    &trans  &kp PIPE  &kp N1  &kp N2  &kp N3   &kp RBRC   &kp PIPE
-                     &trans  &trans    &trans      &trans     &trans    &trans  &trans    &trans  &trans  &trans
+&kp F1  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                       &kp F7    &kp F8  &kp F9  &kp F10  &kp F11    &kp F12
+&kp F1  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                       &kp AMPS  &kp N7  &kp N8  &kp N9   &kp F11    &kp F12
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp N0    &kp N4  &kp N5  &kp N6   &kp ASTRK  &trans
+&trans  &trans    &trans  &trans    &trans      &trans     &trans    &trans  &kp PIPE  &kp N1  &kp N2  &kp N3   &kp RBRC   &trans
+                  &trans  &trans    &trans      &trans     &trans    &trans  &trans    &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -243,8 +243,8 @@
             bindings = <
 &trans     &trans     &trans    &trans     &trans     &trans                           &bt BT_SEL 0  &trans     &trans        &bt BT_NXT  &bt BT_PRV  &bt BT_CLR
 &kp GRAVE  &none      &kp DQT   &kp CARET  &kp APOS   &kp GRAVE                        &kp N6        &kp N7     &kp N8        &kp N9      &kp N0      &trans
-&kp F1     &kp ASTRK  &kp PLUS  &kp MINUS  &kp EQUAL  &kp LS(COMMA)                    &kp LS(DOT)   &kp LEFT   &kp DOWN      &kp UP      &kp RIGHT   &trans
-&kp F7     &kp F8     &kp F9    &kp N9     &kp F11    &kp F12        &trans    &trans  &kp SLASH     &kp MINUS  &kp QUESTION  &kp COLON   &kp UNDER   &none
+&trans     &kp ASTRK  &kp PLUS  &kp MINUS  &kp EQUAL  &kp LS(COMMA)                    &kp LS(DOT)   &kp LEFT   &kp DOWN      &kp UP      &kp RIGHT   &trans
+&trans     &kp F8     &kp F9    &kp N9     &kp F11    &kp F12        &trans    &trans  &kp SLASH     &kp MINUS  &kp QUESTION  &kp COLON   &kp UNDER   &trans
                       &trans    &trans     &trans     &trans         &trans    &trans  &trans        &trans     &trans        &trans
             >;
 
