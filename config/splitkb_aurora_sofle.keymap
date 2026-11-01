@@ -26,11 +26,11 @@
     quick-tap-ms = <175>;
 };
 
-&left_encoder { steps = <0>; };
+&left_encoder { steps = <144>; };
 
-&right_encoder { steps = <0>; };
+&right_encoder { steps = <144>; };
 
-&sensors { triggers-per-rotation = <96>; };
+&sensors { triggers-per-rotation = <36>; };
 
 / {
     combos {
@@ -222,9 +222,8 @@
                         &kp LCTRL  &kp LALT  &kp LEFT_WIN  &mo 1   &kp SPACE    &kp RET  &mo 2   &kp BSPC   &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings =
-                <&test2 SCRL_LEFT SCRL_RIGHT>,
-                <&test2 SCRL_UP SCRL_DOWN>;
+            sensor-bindings = <&inc_dec_kp A B
+                               &inc_dec_kp C D>;
         };
 
         lower_layer {
@@ -243,7 +242,8 @@
                   &trans  &trans    &trans      &trans     &trans    &trans  &trans    &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_vertical &scroll_horizontal>;
+            sensor-bindings = <&inc_dec_kp A B
+                               &inc_dec_kp C D>;
         };
 
         raise_layer {
