@@ -179,9 +179,8 @@
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
 
-        test2: test2 {
+        mouse_scroll: mouse_wheel_scrl {
             compatible = "zmk,behavior-sensor-rotate-var";
-            label = "TEST2";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
 
@@ -222,8 +221,9 @@
                         &kp LCTRL  &kp LALT  &kp LEFT_WIN  &mo 1   &kp SPACE    &kp RET  &mo 2   &kp BSPC   &kp RGUI  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp A B
-                               &inc_dec_kp C D>;
+            sensor-bindings = 
+                <&mouse_scroll SCRL_UP SCRL_DOWN>,
+                <&mouse_scroll SCRL_UP SCRL_DOWN>;
         };
 
         lower_layer {
