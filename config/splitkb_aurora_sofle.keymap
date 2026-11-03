@@ -247,10 +247,8 @@
                   &trans  &trans    &trans      &trans     &trans    &trans  &trans    &trans  &trans  &trans
             >;
 
-            sensor-bindings = <
-&inc_dec_kp A B
-                               &inc_dec_kp C 
-            >;
+            sensor-bindings = <&inc_dec_kp A B
+                               &inc_dec_kp C D>;
         };
 
         raise_layer {
