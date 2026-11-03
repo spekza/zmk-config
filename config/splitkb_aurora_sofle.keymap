@@ -32,7 +32,7 @@
 
 &right_encoder { steps = <144>; };
 
-&sensors { triggers-per-rotation = <36>; };
+&sensors { triggers-per-rotation = <72>; };
 
 / {
     combos {
